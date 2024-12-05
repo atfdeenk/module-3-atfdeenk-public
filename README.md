@@ -1,4 +1,4 @@
-### Random Recipe Finder
+# Random Recipe Finder
 
 i've completed the js for **Random Recipe Finder**.
 You can find a recipe for **Spaghetti Carbonara** by clicking Get Random Recipe Button. It will describe the steps you need to take to make the Spaghetti.
