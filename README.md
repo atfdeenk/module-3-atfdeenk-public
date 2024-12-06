@@ -1,26 +1,23 @@
 # Random Recipe Finder
 
-i've completed the js for **Random Recipe Finder**.
-You can find a recipe for **Spaghetti Carbonara** by clicking Get Random Recipe Button. It will describe the steps you need to take to make the Spaghetti.
+I've completed the js for **Random Recipe Finder**. And do excuse me for I choose **getRandomRecipe** as the name of main Function instead of **onRandomRecipe**, because i find it more suitable for this specific assignment.
+
+You can find a 10 random recipes by clicking Get Random Recipe Button. It will also describe the steps you need to take to make the recipe shown.
 
 Visit the [link](https://noob-recipe-finder.netlify.app/) and find your recipe!
-
-
-
-
 
 ## Assignment Info
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/K1PcQPG7)
 
-# Starter Code for Assignment Module 3
+## Starter Code for Assignment Module 3
 
-## Run the project
+### Run the project
 
 - npm install
 - npm run dev
 
-## Standard Assignment
+### Standard Assignment
 
 - Create main.js file inside src folder
 - Based on the assignment brief, create a variable and put the variable value as below.
@@ -37,7 +34,7 @@ Visit the [link](https://noob-recipe-finder.netlify.app/) and find your recipe!
 - The function will also set `recipe-image` width to "200px" and set `#getRecipeBtn` to be disappeared after click.
 - Bind the function `onRandomRecipe` to the `click` listener button
 
-## Challenge your limits!
+### Challenge your limits!
 
 - Make a proper variable name for more a readable code.
 - Put things into a variable for a meaningful naming.
