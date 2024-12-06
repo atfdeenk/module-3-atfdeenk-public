@@ -2,7 +2,7 @@
 
 I've completed the js for **Random Recipe Finder**. And do excuse me for I choose **getRandomRecipe** as the name of main Function instead of **onRandomRecipe**, because i find it more suitable for this specific assignment.
 
-You can find a 10 random recipes by clicking **Get Random Recipe Button**. It will also describe the steps you need to take to make the recipe.
+You can find a 10 random recipes by clicking **Get Random Recipe Button**. There will also be instructions to make the food.
 
 Visit the [link](https://noob-recipe-finder.netlify.app/) and find your recipe!
 
