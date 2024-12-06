@@ -154,11 +154,11 @@ function shuffleRecipe() {
 
 // Function to update the recipe instructions
 function updateRecipeInstructions(instructions) {
-  // Split the instructions into a list and create a new unordered list element
+  // Split the instructions into a list and create a new ordered list element
   const instructionsList = instructions.split('. ');
   const ol = document.createElement('ol');
 
-  // Style the unordered list
+  // Style the ordered list
   ol.style.cssText = `
     margin: 10px 20px;
     padding: 0 20px;
@@ -166,7 +166,7 @@ function updateRecipeInstructions(instructions) {
     font-size: 16px;
     `;
 
-  // Add each instruction as a list item to the unordered list and style it
+  // Add each instruction as a list item to the ordered list and style it
   instructionsList.forEach((instruction) => {
     const li = document.createElement('li');
     li.textContent = instruction + '.';
@@ -174,8 +174,8 @@ function updateRecipeInstructions(instructions) {
     ol.appendChild(li);
   });
 
-  // Replace the existing recipe instructions with the new unordered list
-  recipeInstruction.innerHTML = '';
+  // Replace the existing recipe instructions with the new ordered list
+  recipeInstruction.textContent = '';
   recipeInstruction.appendChild(ol);
 
   // Style the recipe instructions
