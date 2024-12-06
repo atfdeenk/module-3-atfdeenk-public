@@ -109,25 +109,43 @@ function getRandomRecipe() {
   // Update the recipe instructions
   updateRecipeInstructions(randomRecipe.instructions);
 
-  console.log(randomRecipe);
+  // debug
+  console.log('Random Recipe:', randomRecipe);
+  console.log('Previous Recipes:', previousRecipes);
+  console.log('Recipes Shown:', recipesShown);
+  console.log('Recipes Length:', recipes.length);
 }
 
 // Get the previous recipe from session storage
 const previousRecipe = sessionStorage.getItem('previousRecipe');
+// Retrieve the stored previousRecipes array from session storage
+let storedPreviousRecipes = JSON.parse(
+  sessionStorage.getItem('previousRecipes')
+);
+// Retrieve the stored recipesShown value from session storage
+const storedRecipesShown = sessionStorage.getItem('recipesShown');
 
 // Initialize the previous recipes array
-let previousRecipes = [];
-let recipesShown = 0;
+let previousRecipes;
+let recipesShown;
+
+if (storedPreviousRecipes === null) {
+  previousRecipes = [];
+  recipesShown = 0;
+} else {
+  previousRecipes = storedPreviousRecipes;
+  recipesShown = storedRecipesShown;
+}
 
 // If there is a previous recipe, add it to the previous recipes array
 if (previousRecipe) {
-  previousRecipes = [previousRecipe];
+  storedPreviousRecipes = [previousRecipe];
 }
 
 // Function to get a recipe from the recipes array
 function shuffleRecipe() {
   // Check if all recipes have been shown
-  if (recipesShown === recipes.length) {
+  if (storedRecipesShown == recipes.length) {
     // Reset the previousRecipes array and recipesShown counter
     previousRecipes = [];
     recipesShown = 0;
@@ -148,6 +166,8 @@ function shuffleRecipe() {
 
   // Store the previous recipe in session storage
   sessionStorage.setItem('previousRecipe', randomRecipe.id);
+  sessionStorage.setItem('recipesShown', recipesShown);
+  sessionStorage.setItem('previousRecipes', JSON.stringify(previousRecipes));
 
   return randomRecipe;
 }
