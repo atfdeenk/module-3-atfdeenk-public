@@ -6,6 +6,8 @@ You can find a 10 random recipes by clicking Get Random Recipe Button. It will a
 
 Visit the [link](https://noob-recipe-finder.netlify.app/) and find your recipe!
 
+___Attention!___  **You'll never find the same recipe until you see all 10 of them. Even if YOU refreshed the browser!**
+
 ## Assignment Info
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/K1PcQPG7)
